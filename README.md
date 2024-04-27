@@ -1,4 +1,19 @@
-# kickstart-modular.nvim
+# this is my fork of kickstart-modular.nvim
+
+## Changes:
+
+### Install:
+
+```bash
+cd ~/.config 
+cp -R nvim/ old_nvim/ 
+rm -rf nvim/ 
+git clone https://github.com/ArthurHowardMorris/aneditorpleasingtothemind.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+### Customizations:
+
+- Theme: changed to my personal fork of tokyo night.
 
 ## Introduction
 
