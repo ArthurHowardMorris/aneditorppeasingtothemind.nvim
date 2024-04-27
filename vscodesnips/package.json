@@ -1,0 +1,19 @@
+{
+	"name": "arthursnips",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"all"
+				],
+				"path": "./all.json"
+			},
+			{
+				"language": [
+					"stata"
+				],
+				"path": "./stata.json"
+			}
+		]
+	}
+}

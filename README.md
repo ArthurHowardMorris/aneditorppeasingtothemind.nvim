@@ -14,6 +14,8 @@ git clone https://github.com/ArthurHowardMorris/aneditorpleasingtothemind.nvim.g
 ### Customizations:
 
 - Theme: changed to my personal fork of tokyo night.
+- `/vscodesnips/` 
+- 
 
 ## Introduction
 

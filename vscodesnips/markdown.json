@@ -1,0 +1,30 @@
+{
+	"snip1": {
+		"prefix": "mark1",
+		"body": [
+			"expands? jumps? $1 $2 !"
+		]
+	},
+	"snip2": {
+		"prefix": "mark2",
+		"body": [
+			"multi $1",
+			"line $2",
+			"snippet$0"
+		]
+	},
+	"md_blog_header": {
+		"prefix": "blog",
+		"body": [
+			"---",
+			"published: ${1:false}",
+			"title: \"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE\"",
+			"category: \"${2:writing coding talking}\"",
+			"tags:",
+			"\t- ${3:tag}",
+			"---"
+		],
+		"description": "a yaml header for a blog post"
+	}
+}
+
