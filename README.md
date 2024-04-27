@@ -16,7 +16,7 @@ git clone https://github.com/ArthurHowardMorris/aneditorpleasingtothemind.nvim.g
 - Theme: changed to my personal fork of tokyo night.
 - `/vscodesnips/` 
 - various keymaps 
-<!-- - TODO: figure out completion keybindings (update if needed) -->
+- NB: we are using the stock completions now, so `:help ins-completion` is your friend.
 
 ## Introduction
 
