@@ -33,6 +33,24 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+-- leader based versions (test this difference)
+-- vim.keymap.set('n', '<leader>h', '<C-w>h', {desc = 'window left'}) -- note that this overwrites git hunk
+-- vim.keymap.set('n', '<leader>j', '<C-w>j', {desc = 'window down'})
+-- vim.keymap.set('n', '<leader>k', '<C-w>k', {desc = 'window up'})
+-- vim.keymap.set('n', '<leader>l', '<C-w>l', {desc = 'window left'})
+-- pane switching and spliting
+vim.keymap.set('n', '<leader>|', '<cmd>vs<CR>', { desc = 'vertical split' })
+vim.keymap.set('n', '<leader>-', '<cmd>sp<CR>', { desc = 'horizontal split' })
+
+-- save and send full buffer path to the clipboard
+vim.keymap.set('n', '<leader>yp', '<cmd>w<CR><cmd>!echo %:p|pbcopy<CR><CR>', { desc = '[Y]ank current buffer [p]ath' })
+-- save and send rtf version of the buffer to the clipboard
+vim.keymap.set('n', '<leader>yrtf', '<cmd>w<CR><cmd>!pandoc --standalone --to=rtf --output=- % |pbcopy<CR><CR>', { desc = '[Y]ank current buffer in [rtf]' })
+vim.keymap.set('n', '<leader>yht', '<cmd>w<CR><cmd>!pandoc --standalone --to=html --output=- % |pbcopy<CR><CR>', { desc = '[Y]ank current buffer in [ht]ml' })
+
+-- Neo tree keymaps
+vim.keymap.set('n', '<leader>tr', '<cmd>Neotree reveal<CR>')
+vim.keymap.set('n', '<leader>gss', '<cmd>Neotree float git_status<CR>')
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
