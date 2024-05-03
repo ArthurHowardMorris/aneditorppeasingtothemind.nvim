@@ -25,6 +25,12 @@
 			"---"
 		],
 		"description": "a yaml header for a blog post"
+	},
+	"q1toqn": {
+		"prefix": "qn",
+		"body": [
+			"q_1,q_2,\\dots,q_n"
+		],
+		"description": "values of q_1 to q_n"
 	}
 }
-
