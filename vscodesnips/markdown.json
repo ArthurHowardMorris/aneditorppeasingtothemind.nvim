@@ -1,9 +1,20 @@
 {
-	"snip1": {
-		"prefix": "mark1",
+	"inline_equation": {
+		"prefix": "$",
 		"body": [
-			"expands? jumps? $1 $2 !"
-		]
+			"\\$$1\\$$0"
+		],
+		"description": "inline equation"
+	},
+	"equation": {
+		"prefix": "$$",
+		"body": [
+			"\\$\\$",
+			"$1",
+			"\\$\\$",
+			"$0"
+		],
+		"description": "equation"
 	},
 	"snip2": {
 		"prefix": "mark2",
